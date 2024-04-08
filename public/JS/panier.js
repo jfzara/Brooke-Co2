@@ -142,5 +142,22 @@ document.addEventListener('DOMContentLoaded', function() {
     displayCartItems(); // Initialiser l'affichage des éléments du panier
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Cibler le lien "Valider"
+    const checkoutButton = document.getElementById('checkout-button');
 
+    // Ajouter un écouteur d'événements au clic sur le lien "Valider"
+    checkoutButton.addEventListener('click', function(event) {
+        // Récupérer le prix total depuis la page actuelle
+        const totalPrice = parseFloat(document.getElementById('subtotal').textContent);
+
+        // Construire l'URL de la page de paiement avec le prix total comme paramètre
+        const paymentPageURL = "/public/HTML/paiement.html?totalPrice=" + totalPrice;
+
+        // Rediriger vers la page de paiement avec le prix total comme paramètre
+        window.location.href = paymentPageURL;
+
+        // Empêcher le comportement par défaut du lien (navigation)
+        event.preventDefault();
+    });
 
