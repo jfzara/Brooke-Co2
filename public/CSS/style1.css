@@ -5,8 +5,87 @@ body {
 }
 
 
+#paypal-button-container {
+   
+    margin-left: 420px; /* Définir une marge gauche automatique pour centrer les boutons PayPal horizontalement */
+    
+}
 
-/* Barre de navigation */.navbar {     background-color: #ffffff;     padding: 0.5rem 1rem; } /* Conteneur fluide */.container-fluid {     display: flex;     justify-content: space-between;     align-items: center; } /* Logo de la barre de navigation */.navbar-brand {     margin-right: 2rem; } /* Bouton de basculement (toggle) de la barre de navigation */.navbar-toggler {     border: none; } /* Contenu de la barre de navigation lorsqu'elle est réduite */.navbar-collapse {     justify-content: flex-end; } /* Liens de navigation dans la barre de navigation */.navbar-nav .nav-item .nav-link {     margin-right: 1rem;     color: #000000; } /* Zone de recherche */#searchBarContainer {     position: relative; } /* Formulaire de recherche */#searchBar {     display: flex;     align-items: center; } /* Champ de saisie de recherche */#searchInput {     width: 200px;     padding: 0.375rem 0.75rem;     border: 1px solid #ced4da;     border-radius: 0.25rem;     margin-right: 0.5rem; } /* Bouton de recherche */#searchButton {     background-color: #6f42c1;     border: none;     color: #ffffff;     padding: 0.375rem 0.75rem;     border-radius: 0.25rem; } /* Menu déroulant de la zone de recherche */#dropdownMenu {     position: absolute;     top: 100%;     left: 0;     z-index: 1000;     display: none;     background-color: #ffffff;     border: 1px solid rgba(0, 0, 0, 0.15);     border-radius: 0.25rem; } /* Éléments du panier */#cartItems {     display: flex;     align-items: center; } /* Nombre d'articles dans le panier */#cartItemCount {     margin-left: 0.5rem;     background-color: #6f42c1;     color: #ffffff;     padding: 0.25rem 0.5rem;     border-radius: 0.25rem; }
+#container {
+    margin: 0 auto; /* Centrer le conteneur horizontalement */
+    max-width: 600px; /* Largeur maximale du conteneur */
+    padding: 20px; /* Espacement interne */
+    border: 2px solid #ccc; /* Bordure grise */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+#purchase-list {
+    margin-top: 20px; /* Espacement depuis le haut du conteneur */
+}
+
+#total-price-text {
+    font-size: 18px; /* Taille de police */
+    font-weight: bold; /* Gras */
+    margin-bottom: 10px; /* Espacement depuis le bas du texte */
+}
+
+#items-list {
+    list-style-type: none; /* Supprimer les puces de la liste */
+    padding: 0; /* Supprimer le remplissage par défaut de la liste */
+}
+
+#total-price-item {
+    border-top: 1px solid #ccc; /* Bordure supérieure pour séparer les éléments */
+    padding-top: 10px; /* Espacement vers le haut */
+}
+
+#total-price {
+    font-size: 24px; /* Taille de police pour le prix total */
+    color: #007bff; /* Couleur de texte bleue */
+    margin-left: 10px; /* Espacement vers la gauche */
+}
+
+
+
+/* CSS pour le logo */
+.navbar-logo {
+    max-width: 100px; /* Limiter la largeur maximale du logo à 100 pixels */
+    height: auto; /* Maintenir les proportions originales */
+}
+
+
+
+/* Style de la barre de navigation */
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Déplacer le menu vers la droite */
+}
+
+/* Ajout de cette classe pour positionner le panier (🛒) à droite */
+.cart-icon {
+    margin-left: auto;
+    font-size: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+}
+
+/* Aligner les éléments du menu à droite */
+nav a:nth-child(n+2) {
+    margin-left: auto;
+}
+
+/* Ajout de styles pour la barre de recherche */
+.search-bar {
+    margin-left: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
 
 /* Style pour le conteneur de la carte */
 #map {
@@ -30,7 +109,6 @@ body {
 .contact-info p {
     color: #666;
 }
-
 /* Styles pour le formulaire */
 form {
     background-color: #fff;
@@ -162,9 +240,14 @@ footer .row {
     margin-bottom: 1rem;
     }
 
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
- gmp-map {
-    height: 100%;
-  }
-  
+    #confirmation-message {
+        display: none; /* Masquer l'élément par défaut */
+        text-align: center; /* Centrer le texte */
+        background-color: red; /* Couleur de fond rouge */
+        color: white; /* Texte en blanc */
+        padding: 10px; /* Ajouter un peu d'espace intérieur pour le contenu */
+        margin-top: 20px; /* Marge en haut pour l'espacement visuel */
+    }
+    
+    
+
