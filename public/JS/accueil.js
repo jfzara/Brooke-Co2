@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
       case "javaScript":
         content = `
           <div>
-            <h4>JavaScript Avancé</h4>
-            <p>Devenez un pro de JavaScript avec notre cours tutoriel avancé. Découvrez des stratégies de développement avancées et bien plus encore !</p>
+            <h4>Python avancé</h4>
+            <p>Devenez un pro de Python avec notre cours tutoriel avancé. Découvrez des stratégies de développement avancées et bien plus encore !</p>
             <p><strong>Durée:</strong> 16 heures au total</p>
             <p><strong>Niveau:</strong> Intermédiaire</p>
-            <p><a href="javascript:void(0);" class="btn btn-primary enroll" onclick="addToCart('javascript', 'JavaScript Avancé', '150.50', '/public/photos/python8jpg.jpg')">Ajouter au Panier</a></p>
+            <p><a href="javascript:void(0);" class="btn btn-primary enroll" onclick="addToCart('javascript', 'Python Avancé', '150.50', '/public/images/photos2/python8jpg.jpg')">Ajouter au Panier</a></p>
           </div>`;
         break;
      

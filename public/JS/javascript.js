@@ -1,7 +1,7 @@
 
 
 // Déclaration de la variable url
-var url = 'coursJS.json';
+var url = '/public/JSON/coursJS.json';
 
 
 

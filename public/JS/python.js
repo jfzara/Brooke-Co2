@@ -1,6 +1,6 @@
 
 	// Déclaration de la variable url
-    var url = 'coursPYTHON.json';
+    var url = '/public/JSON/coursPYTHON.json';
 
 
 
